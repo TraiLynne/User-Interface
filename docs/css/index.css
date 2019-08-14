@@ -250,3 +250,9 @@ a {
 article {
     padding: 25px 0;
 }
+
+/* Contact */
+
+#contact, footer {
+    text-align: center;
+}
