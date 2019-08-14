@@ -171,9 +171,20 @@ header,
 section,
 footer {
     width: 96%;
-    margin: 25px auto 25px;
+    margin: 25px auto;
 }
 
+h3 {
+    font-size: 50px;
+}
+
+p, a {
+    font-size: 25px;
+    line-height: 50px;
+}
+
+
+/* Header */
 nav {
     width: 100%;
     text-align: center;
@@ -202,13 +213,18 @@ a {
     display: block;
 }
 
-#banner {
+
+/* Banner */
+#banner,
+#main,
+#contact {
     border-bottom: 4px solid black;
-    padding-bottom: 50px;
+    padding: 50px 0;
 }
-#cta{
+
+#cta {
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
 }
 
 #cta h1 {
@@ -228,4 +244,9 @@ a {
     display: block;
     margin: 0 auto;
     width: 100%;
+}
+
+/* Main  */
+article {
+    padding: 25px 0;
 }
