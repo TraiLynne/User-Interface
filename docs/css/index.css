@@ -171,16 +171,16 @@ header,
 section,
 footer {
     width: 96%;
-    margin: 25px auto;
+    margin: 0 auto;
 }
 
 h3 {
-    font-size: 50px;
+    font-size: 25px;
 }
 
-p, a {
-    font-size: 25px;
-    line-height: 50px;
+p{
+    font-size: 16px;
+    line-height: 32px;
 }
 
 
@@ -209,7 +209,7 @@ a {
 
 .logo {
     margin: 5px auto;
-    width: Calc(183px * 2);
+    width: 75%;
     display: block;
 }
 
@@ -219,7 +219,7 @@ a {
 #main,
 #contact {
     border-bottom: 4px solid black;
-    padding: 50px 0;
+    padding: 25px 0;
 }
 
 #cta {
@@ -228,14 +228,14 @@ a {
 }
 
 #cta h1 {
-    font-size: 150px;
+    font-size: 75px;
 }
 
 #cta button {
     width: 50%;
     background: rgb(23, 208, 55);
     background: linear-gradient(135deg, rgba(23, 208, 55, 1) 0%, rgba(192, 216, 231, 1) 50%, rgba(1, 99, 188, 1) 100%);
-    font-size: 50px;
+    font-size: 25px;
     padding: 15px 0;
     margin: 25px 0;
 }
@@ -248,11 +248,49 @@ a {
 
 /* Main  */
 article {
-    padding: 25px 0;
+    padding: 15px 0;
+}
+
+#main img {
+    width: 100%;
 }
 
 /* Contact */
 
-#contact, footer {
+#contact,
+footer {
     text-align: center;
 }
+
+
+/* @media screen and (min-width: 768px) {
+    header {
+        margin-top: 0;
+    }
+    nav {
+        height: 36px;
+        width: Calc(100% - 184px);
+        float: left;
+        display: block;
+    }
+
+    ul {
+        width: 100%;
+    }
+
+    li {
+        width: Calc(100%/6);
+        float: left;
+        height: 36px;
+    }
+
+    li a {
+        font-size: 16px;
+    }
+
+    .logo {
+        width: 183px;
+        padding: 10px 0 0;
+    }
+
+} */
