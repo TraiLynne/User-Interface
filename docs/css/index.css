@@ -171,7 +171,7 @@ header,
 section,
 footer {
     width: 96%;
-    margin: 0 auto;
+    margin: 25px auto 25px;
 }
 
 nav {
@@ -198,6 +198,34 @@ a {
 
 .logo {
     margin: 5px auto;
-    width: 183px;
+    width: Calc(183px * 2);
     display: block;
+}
+
+#banner {
+    border-bottom: 4px solid black;
+    padding-bottom: 50px;
+}
+#cta{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#cta h1 {
+    font-size: 150px;
+}
+
+#cta button {
+    width: 50%;
+    background: rgb(23, 208, 55);
+    background: linear-gradient(135deg, rgba(23, 208, 55, 1) 0%, rgba(192, 216, 231, 1) 50%, rgba(1, 99, 188, 1) 100%);
+    font-size: 50px;
+    padding: 15px 0;
+    margin: 25px 0;
+}
+
+#banner img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
 }
