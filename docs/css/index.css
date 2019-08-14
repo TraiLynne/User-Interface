@@ -178,7 +178,7 @@ h3 {
     font-size: 25px;
 }
 
-p{
+p {
     font-size: 16px;
     line-height: 32px;
 }
@@ -238,6 +238,7 @@ a {
     font-size: 25px;
     padding: 15px 0;
     margin: 25px 0;
+    box-shadow: 5px 5px 8px #888;
 }
 
 #banner img {
@@ -262,11 +263,31 @@ footer {
     text-align: center;
 }
 
+footer {
+    margin-top: 2%;
+}
+
 
 @media screen and (min-width: 768px) {
-    header {
-        margin-top: 0;
+
+    .full-width {
+        width: 96%;
     }
+
+    .half-width {
+        width: 48%;
+        float: left;
+    }
+
+    .third-width {
+        width: Calc(96%/3);
+        float: left;
+    }
+
+    header {
+        margin-top: 2%;
+    }
+
     nav {
         height: 36px;
         width: Calc(100% - 184px);
@@ -289,8 +310,39 @@ footer {
         font-size: 16px;
     }
 
-    .logo {
+    .logo-container {
         width: 183px;
+        height: 36px;
+        background: url('../img/logo.png');
+        float: right;
     }
 
+    .logo-container:hover {
+        background: url('../img/logo-lit.png');
+    }
+
+    #banner,
+    #main {
+        overflow: auto;
+    }
+
+    #cta {
+        margin: auto;
+        padding-top: 5%;
+    }
+
+    #cta button {
+        background: none;
+    }
+
+    #cta button:hover {
+        background: rgb(23, 208, 55);
+        background: linear-gradient(135deg, rgba(23, 208, 55, 1) 0%, rgba(192, 216, 231, 1) 50%, rgba(1, 99, 188, 1) 100%);
+    }
+
+    #features,
+    #services,
+    #product {
+        margin-right: 2%;
+    }
 }
