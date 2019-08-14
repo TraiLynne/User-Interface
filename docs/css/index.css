@@ -263,7 +263,7 @@ footer {
 }
 
 
-/* @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
     header {
         margin-top: 0;
     }
@@ -281,7 +281,8 @@ footer {
     li {
         width: Calc(100%/6);
         float: left;
-        height: 36px;
+        height: 24px;
+        padding: 6px 0;
     }
 
     li a {
@@ -290,7 +291,6 @@ footer {
 
     .logo {
         width: 183px;
-        padding: 10px 0 0;
     }
 
-} */
+}
