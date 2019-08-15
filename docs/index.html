@@ -18,15 +18,15 @@
   </head>
 
   <body>
-    <header onClick={toggleNav()}>
+    <header>
       <nav>
         <ul>
-          <li><a href='#'>Services</a></li>
-          <li><a href='#'>Product</a></li>
-          <li><a href='#'>Vision</a></li>
-          <li><a href='#'>Features</a></li>
-          <li><a href='#'>About</a></li>
-          <li><a href='#'>Contact</a></li>
+          <li><a href='#services' class='nav-link'>Services</a></li>
+          <li><a href='#product' class='nav-link'>Product</a></li>
+          <li><a href='#vision' class='nav-link'>Vision</a></li>
+          <li><a href='#features' class='nav-link'>Features</a></li>
+          <li><a href='#about' class='nav-link'>About</a></li>
+          <li><a href='#contact' class='nav-link'>Contact</a></li>
         </ul>
       </nav>
 
@@ -98,25 +98,38 @@
             let $logo = $('#logo');
             let $nav = $('nav');
             let $header = $('header');
+            let $navLink = $('.nav-link');
 
-            $logo.off('click').on('click', (e) => {
+            $logo.on('click', (e) => {
               e.preventDefault();
               
               if (screen.width < 768) {
-                alert('click')
                 if ($nav.css('display') === 'none'){
                   $logo.removeClass('logo1').addClass('logo2');
-                  $nav.addClass('active-nav')
-                  $header.addClass('active-header')
+                  $nav.addClass('active-nav');
+                  $header.addClass('active-header');
                 } else {
-                  alert('clicked')
                   $logo.removeClass('logo2').addClass('logo1');
-                  $nav.removeClass('active-nav')
+                  $nav.removeClass('active-nav');
                   $header.removeClass('active-header');
                 }
               }
+            });
 
-            })
+            $navLink.on('click', () => {
+              
+              if (screen.width < 768) {
+                if ($nav.css('display') === 'none'){
+                  $logo.removeClass('logo1').addClass('logo2');
+                  $nav.addClass('active-nav');
+                  $header.addClass('active-header');
+                } else {
+                  $logo.removeClass('logo2').addClass('logo1');
+                  $nav.removeClass('active-nav');
+                  $header.removeClass('active-header');
+                }
+              }
+            });
           });
         
     </script>

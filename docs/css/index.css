@@ -204,6 +204,8 @@ nav {
 
 .active-nav {
     display: block;
+    position: absolute;
+    top: 50px;
 }
 
 ul {
@@ -341,12 +343,18 @@ footer {
         /* padding-left: 3%; */
     }
 
+
+
     li a {
         font-size: 16px;
     }
 
-    nav {
-        margin-left
+    li a:hover {
+        font-size: 20px;
+    }
+
+    li a:active {
+        color: rgba(1, 99, 188, 1);
     }
 
     #logo.logo1 {
