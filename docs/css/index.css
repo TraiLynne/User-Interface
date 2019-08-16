@@ -248,9 +248,13 @@ a {
 #banner,
 #main,
 #contact {
-    margin-top: 40px;
     border-bottom: 4px solid black;
-    padding: 25px 0;
+    padding-bottom: 45px;
+}
+
+#banner,
+#contact {
+    margin-top: 45px;
 }
 
 #cta {
@@ -280,11 +284,12 @@ a {
 
 /* Main  */
 article {
-    padding: 15px 0;
+    padding: 45px 0 0;
 }
 
 #main img {
     width: 100%;
+    padding: 45px 0 0;
 }
 
 /* Contact */
@@ -387,6 +392,10 @@ footer {
         background: linear-gradient(135deg, rgba(23, 208, 55, 1) 0%, rgba(192, 216, 231, 1) 50%, rgba(1, 99, 188, 1) 100%);
     }
 
+
+    #main {
+        padding-top: 0;
+    }
     #features,
     #services,
     #product {
@@ -397,7 +406,7 @@ footer {
         float: right;
     }
     
-    #main, #contact {
+    #main {
         margin-top: 0;
     }
 }
