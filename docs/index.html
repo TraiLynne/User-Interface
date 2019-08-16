@@ -103,7 +103,7 @@
             $logo.on('click', (e) => {
               e.preventDefault();
               
-              if (screen.width < 768) {
+              if ($(window).width() < 768) {
                 if ($nav.css('display') === 'none'){
                   $logo.removeClass('logo1').addClass('logo2');
                   $nav.addClass('active-nav');
@@ -118,7 +118,7 @@
 
             $navLink.on('click', () => {
               
-              if (screen.width < 768) {
+              if ($(window).width() < 768) {
                 if ($nav.css('display') === 'none'){
                   $logo.removeClass('logo1').addClass('logo2');
                   $nav.addClass('active-nav');
